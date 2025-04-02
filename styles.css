@@ -103,14 +103,31 @@ html {
     left: 30%;
     transform: translate(-50%, -50%);
 }
+.btn3 {
+    border-color: green;
+    background-color: var(--main-color);
+    color: #eee;
+    position: absolute;
+    top: 73%;
+    left: 16%;
+    padding: 7px 7px;
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+}
+    /* On mouse-over */
+.btn3:hover {
+    background: green;
+}
 
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     gap: 3rem;
     background: var(--text-color);
-    padding: 20px;
+    padding: 250px;
 }
 
 .about-img img {
@@ -121,21 +138,24 @@ html {
 .heading {
     text-align: center;
     font-size: 2.5rem;
+    color: var(--main-color);
+    
 }
 
 .about-content h2 {
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 .about-content h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .about-content p {
     font-size: 1rem;
     text-wrap: 10px;
-    margin: 2rem 0 3rem;
+    width: 50%;
+    margin: 5rem 0 5rem;
 }
 .btn2 {
     border-color: #fff;
@@ -146,9 +166,9 @@ html {
     cursor: pointer;
     display: inline-block;
     transition: .5s ease;
-  }
+}
     /* On mouse-over */
-  .btn2:hover {
+.btn2:hover {
     background: var(--main-color);
 }
 
