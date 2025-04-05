@@ -7,50 +7,96 @@
     <title>Social Art Media</title>
 </head>
 <body>
-<!--Header design-->
 
+    <!-- Header -->
     <header class="header">
-        <img src="images/new logo name.png" class="logo">
+        <img src="images/new logo name.png" class="logo" alt="Social Art Media Logo">
 
         <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact"></a><button class="btn">Contact Us</button></a>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact" class="btn">Contact Us</a>
         </nav>
     </header>
 
-<!--Home dESIGN-->
-    <div class="comp">
+    <!-- Home Section -->
+    <div id="home" class="comp">
         <p class="name">Social Art Media</p>
-        <p class="name2">Creative Solutions for Web & Printings</p>
-        <a href="#View Services" class="btn3">View Services</a>
+        <p class="name2">Creative Solutions for Web & Print</p>
+        <a href="#services" class="btn3">View Services</a>
     </div>
 
-<!--About section-->
-<section class="about" id="about">
-    <div class="about-content">
-        <h2 class="heading">Creative solutions</h2>
-        <h3>Transforming ideas into reality</h3>
-        <p>At Social Art Media, we specialize in web development,
-             web design, graphic design, and print solutions. Based in Norrköping,
-             we empower businesses to establish a strong visual presence through stunning layouts,
-             brochures, magazines, books, and innovative advertising solutions.
-             Our dedicated team works closely with you to bring your vision to life,
-             ensuring your brand stands out in a competitive market.</p>
-        <a href="#contact" class="btn2">Get in touch</a>
-    </div>
-    <div class="about-img">
-        <img src="images/about_image.JPG" alt="About">
-    </div>
-</section>
-<!-- Services section-->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="heading">Creative Solutions</h2>
+            <h3>Transforming Ideas into Reality</h3>
+            <p>
+                At Social Art Media, we specialize in web development, web design, graphic design, and print solutions.
+                Based in Norrköping, we empower businesses to establish a strong visual presence through stunning layouts,
+                brochures, magazines, books, and innovative advertising solutions. Our dedicated team works closely with
+                you to bring your vision to life, ensuring your brand stands out in a competitive market.
+            </p>
+            <a href="#contact" class="btn2">Get in Touch</a>
+        </div>
+        <div class="about-img">
+            <img src="images/about_image.JPG" alt="About Social Art Media">
+        </div>
+    </section>
 
-<section class="services" id="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="heading2">CREATIVE SOLUTIONS</h2>
+        <p>Elevate your brand with stunning visuals.</p>
+
+        <section id="wrapper">
+            <div class="web">
+                <img src="images/servcicespic1.JPG">
+                <ul>
+                    <li>Web development</li>
+                </ul>
+            </div>
+            <div class="graphic">
+                <img src="images\graphic.JPG">
+                <ul>
+                    <li>Graphic design</li>
+                </ul>
+            </div>
+            <div class="printing">
+                <img src="images/printings.JPG">
+                <ul>
+                    <li>Printing Solutions</li>
+                </ul>
+            </div>
+    
+        </section>
+    </section>
+
+        
+
+    <!-- Contact Us section-->
+     <section id="contact us" class="contact us">
+    
     
 
-</section>
+     </section>
 
-    
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".navbar a");
+        
+            navLinks.forEach((link) => {
+                link.addEventListener("click", function () {
+                    navLinks.forEach((nav) => nav.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+        </script>
+        
 </body>
 </html>

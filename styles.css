@@ -1,8 +1,16 @@
-@import url('https://https://www.fontbolt.com/font/28-days-later-font/');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Marhey:wght@300..700&display=swap');
+/* Corrected font import (Ensure you have the actual font file or a valid import) */
+@font-face {
+    font-family: '28DaysLater';
+    src: url('path/to/28-days-later-font.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 * {
     margin: 0;
-    
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
@@ -21,25 +29,26 @@ body {
     background: var(--bg-color);
     height: 100%;
 }
+
 html {
     height: 100%;
 }
 
 .header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
-    position: fixed;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
     z-index: 100;
 }
 
 .logo {
+    width: 100px;
     height: 100px;
 }
 
@@ -47,27 +56,30 @@ html {
     font-size: 1.3rem;
     color: var(--text-color);
     margin-left: 4rem;
-    
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .navbar a:hover, 
 .navbar a.active {
     color: var(--main-color);
 }
+
 .btn {
-    border-color: #fff;
+    border: 1px solid #fff;
     background-color: inherit;
     color: #eee;
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-size: 20px;
     cursor: pointer;
     display: inline-block;
-  }
-    /* On mouse-over */
-  .btn:hover {
-    background: var(--main-color);
+    transition: .3s;
 }
+
+.btn:hover {
+    background: var(--main-color);
+    color: white;
+}
+
 .comp {
     background-image: url("images/Capture.JPG");
     background-size: cover;
@@ -75,49 +87,58 @@ html {
     background-repeat: no-repeat;
     display: flex;
     width: 100%;
-    height: 100%;
-    transition: .5s ease;
+    height: 100vh;
+    position: relative;
 }
-.comp::before{
+
+.comp::before {
     content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(0deg, #00000088 35%, #ffffff44 100%);
+    z-index: 0;
 }
+
 .name {
     font-size: 5rem;
-    font-family: "28 DAYS LATER", serif;
+    font-family: "Kanit", sans-serif;
     color: white;
     position: absolute;
-    top: 60%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    transition: .5s ease;
+    z-index: 1;
 }
 
 .name2 {
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     position: absolute;
-    top: 65%;
-    left: 30%;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
+
 .btn3 {
-    border-color: green;
+    border: 1px solid green;
     background-color: var(--main-color);
     color: #eee;
     position: absolute;
-    top: 73%;
-    left: 16%;
-    padding: 7px 7px;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
     font-size: 22px;
     cursor: pointer;
     display: inline-block;
+    transition: .3s;
+    z-index: 1;
 }
-    /* On mouse-over */
+
 .btn3:hover {
     background: green;
 }
@@ -126,23 +147,20 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 3rem;
     background: var(--text-color);
-    padding: 100px;
+    padding: 60px;
     transition: .5s ease;
 }
 
 .about-img img {
-    float: right;
     width: 30vw;
 }
 
 .heading {
-    text-align: center;
     font-size: 2.5rem;
     color: var(--main-color);
-    
 }
 
 .about-content h2 {
@@ -150,35 +168,102 @@ html {
     line-height: 1.6;
 }
 
-.about-content h3 {
-    font-size: 1.2rem;
-}
-
 .about-content p {
     font-size: 1rem;
-    text-wrap: 10px;
     width: 50%;
-    margin: 5rem 0 5rem;
+    margin: 2rem 0;
 }
+
 .btn2 {
-    border-color: #fff;
+    border: 1px solid #fff;
     background-color: inherit;
     color: #404040;
-    padding: 5px 5px;
+    padding: 5px 10px;
     font-size: 20px;
     cursor: pointer;
-    display: inline-block;
-    transition: .5s ease;
+    transition: .3s;
 }
-    /* On mouse-over */
+
 .btn2:hover {
     background: var(--main-color);
+    color: white;
 }
 
 .services {
-    background: var(--bg-color);
-    width: 100%;
-    height: 100%;
     display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 60px;
+    transition: .5s ease;
+}
+.heading2  {
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+#services p{
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    width: 50%;
+    margin: 1rem 0;
 }
 
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    float: left;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.web {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+}
+.web:hover{
+    transform: scale(1.2);
+    transition: .5s ease;
+    z-index: 2;
+}
+.graphic {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+}
+.graphic:hover{
+    transform: scale(1.2);
+    transition: .5s ease;
+    z-index: 2;
+}
+.printing {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 350px;
+    height: 500px;
+}
+.printing:hover{
+    transform: scale(1.2);
+    transition: .5s ease;
+    z-index: 2;
+}
+ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 10px;
+
+}
+li:hover {
+    color: var(--main-color);
+
+}
