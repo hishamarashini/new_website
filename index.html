@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>Social Art Media</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#contact" class="btn">Contact Us</a>
+            <a href="#contactus" class="btn">Contact Us</a>
         </nav>
     </header>
 
@@ -38,7 +39,7 @@
                 brochures, magazines, books, and innovative advertising solutions. Our dedicated team works closely with
                 you to bring your vision to life, ensuring your brand stands out in a competitive market.
             </p>
-            <a href="#contact" class="btn2">Get in Touch</a>
+            <a href="#contactus" class="btn2">Get in Touch</a>
         </div>
         <div class="about-img">
             <img src="images/about_image.JPG" alt="About Social Art Media">
@@ -47,40 +48,83 @@
 
     <!-- Services Section -->
     <section id="services" class="services">
-        <h2 class="heading2">CREATIVE SOLUTIONS</h2>
+        <h2>CREATIVE SOLUTIONS</h2>
         <p>Elevate your brand with stunning visuals.</p>
+        <div class="main">
 
-        <section id="wrapper">
             <div class="web">
-                <img src="images/servcicespic1.JPG">
-                <ul>
-                    <li>Web development</li>
-                </ul>
+                    <img src="images/servcicespic1.JPG">
+                    <ul style="display: flex; flex-direction: row;">
+                        <li>Web development</li>
+                        
+                    </ul>
+                    <p style="color: black; font-size: 1rem; padding: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Transform your online presence with cutting-edge web development solutions.</p>
+                    <a href="websites.html"><box-icon name='right-arrow' type='solid' style="margin: 5px;" ></box-icon></a>
+                  
             </div>
             <div class="graphic">
-                <img src="images\graphic.JPG">
-                <ul>
-                    <li>Graphic design</li>
-                </ul>
+                    <img src="images\graphic.JPG">
+                    <ul>
+                        <li>Graphic design</li>
+                    </ul>
+                    <p style="color: black; font-size: 1rem; padding: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Elevate your brand with stunning graphic design tailored to your vision.</p>
+                    <a href="graphic.html"><box-icon name='right-arrow' type='solid' style="margin: 5px;" ></box-icon></a>
             </div>
             <div class="printing">
-                <img src="images/printings.JPG">
-                <ul>
-                    <li>Printing Solutions</li>
-                </ul>
+                    <img src="images/printings.JPG">
+                    <ul>
+                        <li>Printing Solutions</li>
+                    </ul>
+                    <p style="color: black; font-size: 1rem; padding: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Get high-quality print solutions that enhance your marketing efforts.</p>
+                    <a href="printings.html"><box-icon name='right-arrow' type='solid' style="margin: 5px;" ></box-icon></a>
             </div>
-    
-        </section>
+        </div>
     </section>
 
         
 
     <!-- Contact Us section-->
-     <section id="contact us" class="contact us">
-    
-    
+     <section id="contactus" class="contactus">
+        <div class="container">
+            <h2 style="color: #45a049;">GET IN TOUCH</h2>
+            <h1>Let’s create something amazing together!</h1>
+        </div>
+        <div class="container">
+            <form action="action_page.php" method="post">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Your email.." name="email" required>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
      </section>
+
+     <!-- Footer section -->
+
+     <footer>
+        <div id="media" class="media">
+            <p style="color: white;"><box-icon name='envelope' color='#ffffff'></box-icon> samartmedia@outlook.com</p>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com/socialartmedia2" target="_blank"><box-icon name='facebook' type='logo' color='#ffffff' ></box-icon></a>
+                <a href="https://www.youtube.com/@SocialArtMedia" target="_blank"><box-icon name='youtube' type='logo' color='#ffffff' ></box-icon></a>
+                <a href="https://www.instagram.com/sam_social_art_media/" target="_blank"><box-icon name='instagram-alt' type='logo' color='#ffffff' ></box-icon></a>
+                <a href="https://www.linkedin.com/in/sam-hisham-alrashini-a83842164/" target="_blank"><box-icon name='linkedin-square' type='logo' color='#ffffff' ></box-icon></a>
+            </div>
+        </div>
+
+     </footer>
 
 
 
@@ -96,7 +140,7 @@
                 });
             });
         });
-        </script>
+    </script>
         
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Social Art Media</title>
+</head>
+<body>
+        <!-- Header -->
+        <header class="header">
+            <img src="images/new logo name.png" class="logo" alt="Social Art Media Logo">
+    
+            <nav class="navbar">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contactus" class="btn">Contact Us</a>
+            </nav>
+        </header>
+    
+    
+    
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const navLinks = document.querySelectorAll(".navbar a");
+            
+                navLinks.forEach((link) => {
+                    link.addEventListener("click", function () {
+                        navLinks.forEach((nav) => nav.classList.remove("active"));
+                        this.classList.add("active");
+                    });
+                });
+            });
+            </script>
+    
+</body>
+</html>
