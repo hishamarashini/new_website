@@ -13,8 +13,7 @@
 
     <!-- Header -->
     <header class="header">
-        <img src="images/new logo name.png" class="logo" alt="Social Art Media Logo">
-
+        <img src="images/new logo name.png" class="logo" alt="Social Art Media Logo" style="width: 200px; height: 200px;">
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -130,6 +129,33 @@
         </div>
 
      </footer>
+     <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+     <script>
+        // Scroll to top button
+        let mybutton = document.getElementById("topBtn");
+    
+    // When the user scrolls down 10px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+      topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      
+    };
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
 
 
 
