@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Social Art Media</title>
 </head>
 <body>
@@ -12,6 +14,7 @@
     <!-- Header -->
     <header class="header">
         <img src="images/new logo name.png" class="logo" alt="Social Art Media Logo">
+
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -22,11 +25,13 @@
     </header>
 
     <!-- Home Section -->
-    <div id="home" class="comp">
-        <p class="name">Social Art Media</p>
-        <p class="name2">Creative Solutions for Web & Print</p>
-        <a href="#services" class="btn3">View Services</a>
-    </div>
+    <section id="home" class="home">
+        <div class="home-content">
+            <p class="name">Social Art Media</p>
+            <p class="name2">Creative Solutions for Web & Print</p>
+            <a href="#services" class="btn3">View Services</a>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -90,7 +95,7 @@
             <h1>Let’s create something amazing together!</h1>
         </div>
         <div class="container">
-            <form action="http://outlook.com/samartmedia@outlook.com" method="post" target="_blank">
+            <form action="/contact" method="post" target="_blank">
           
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
