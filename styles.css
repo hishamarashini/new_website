@@ -30,12 +30,13 @@ body {
     color: #333;
   }
 
-  header {
+.header {
+    
     background-color: var(--bg-color);
     color: white;
-    
     text-align: center;
-  }
+    align-items: center;justify-content: center;
+}
 
 .navbar {
     display: flex;
@@ -43,7 +44,6 @@ body {
     background: var(--main-color);
     padding: 0.5rem 0;
 }
-
 
 .navbar a{
     color: white;
@@ -68,8 +68,8 @@ body {
 }
 
 .btn:hover {
-    background: black;
-    color: rgb(0, 0, 0);
+    background: white;
+    color: green;
 }
 
 section {
