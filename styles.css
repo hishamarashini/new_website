@@ -22,12 +22,12 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: rgb(0, 218, 11);
+    --main-color: rgb(255, 132, 0);
 }
 
 body {
-    background-color: var(--main-color);
-    color: #333;
+  display: flex;
+  flex-direction: column;
   }
 
 .header {
@@ -40,7 +40,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-around;
-    background: var(--main-color);
+    background: url("images/back.png");
     padding: 0.5rem 0;
 }
 
@@ -68,12 +68,11 @@ body {
 
 .btn:hover {
     background: white;
-    color: green;
+    color: var(--main-color);
 }
 
 section {
     min-height: 100vh;
-
 }
 
 .home-content {
@@ -152,16 +151,13 @@ section {
     flex-direction: row;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: white;
-    padding: 60px 10rem;
+    padding: 20px 10rem;
     width: 100%;
-    height: 100%;
-    transition: .5s ease;
     gap: 2rem;
-    flex-wrap: wrap;
   }
 
 .about-img img {
-    width: 30vw;
+    width: 25vw;
 }
 
 .heading {
@@ -177,7 +173,7 @@ section {
 .about-content p {
     font-size: 1rem;
     margin: 2rem 0;
-    max-width: 600px; /* optional, to limit readability */
+    max-width: 400px; /* optional, to limit readability */
 }
 
 .btn2 {
@@ -202,9 +198,8 @@ section {
     align-items: center;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20px;
     width: 100%;
-    height: 100%;
+    background-color: var(--second-bg-color);
 }
 .services h2{
     color: var(--main-color);
@@ -219,8 +214,9 @@ section {
     flex-direction: row;
     align-content: center;
     justify-items: center;
-    margin: 50px;
+    margin: 20px;
     gap: 20px;
+
 }
 .main .web:hover{
     transform: scale(1.1);
@@ -253,8 +249,6 @@ section {
     flex: 1 1 calc(20% - 20px); /* 5 boxes per row, minus the gap */
     max-width: calc(20% - 10px); /* Keep width consistent */
     text-align: center;
-    
-
   }
   
   .menu-box img {
@@ -286,6 +280,18 @@ section {
     background-color: #fff;
     width: 350px;
     height: 400px;
+}
+.web a {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: var(--bg-color);
+}
+.web p {
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .graphic {
@@ -326,7 +332,6 @@ li:hover {
     width: 100%;
     height: 100%;
     border: 20px;
-    margin-top: 20px;
     background-color: white;
 }
 
@@ -354,7 +359,7 @@ input[type=text], textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: var(--second-bg-color);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -364,7 +369,7 @@ input[type=text], textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--main-color);
   }
   
   /* Add a background color and some padding around the form */
@@ -416,7 +421,7 @@ input[type=text], textarea {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: green; /* Set a background color */
+    background-color: var(--main-color); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -461,7 +466,7 @@ input[type=text], textarea {
   }
 
   .about-img img {
-    width: 90vw;
+    width: 60vw;
   }
 
   .about-content h2,
