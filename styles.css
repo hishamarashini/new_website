@@ -301,6 +301,18 @@ section {
     width: 350px;
     height: 400px;
 }
+.graphic a {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: var(--bg-color);
+}
+.graphic p {
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .printing {
     display: flex;
@@ -308,6 +320,18 @@ section {
     background-color: #fff;
     width: 350px;
     height: 400px;
+}
+.printing a {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  color: var(--bg-color);
+}
+.printing p {
+  color: var(--main-color);
+  font-size: 1rem;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul li {
