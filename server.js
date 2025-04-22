@@ -6,7 +6,7 @@ const cors = require('cors');
 
 dotenv.config();
 
-const app = express(); // ← this was missing!
+const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
@@ -14,7 +14,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Your contact POST route goes here:
+// Contact POST route
 app.post('/contact', async (req, res) => {
   const { firstname, lastname, email, subject } = req.body;
 
@@ -48,12 +48,7 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-// Start the server
+// Start the server ONCE
 app.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-   console.log(`Server running on port ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
